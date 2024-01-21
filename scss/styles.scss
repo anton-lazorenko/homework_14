@@ -1,0 +1,13 @@
+@import "../scss/_normalize";
+@import "./header";
+@import "./main";
+@import "./footer"; 
+
+
+
+body {
+    margin: 0;
+    width: 1920px;
+    background-repeat: no-repeat;
+    background-image: url(/img/BG_Hero.png);  
+}
