@@ -1,3 +1,25 @@
+@mixin number {
+    position: absolute;
+    transform: translateX(-150px);
+    color: #FFF;
+    font-family: 'Roboto';
+    font-size: 240px;
+    font-weight: 700;
+    line-height: 240px;
+    opacity: 0.1;
+}
+@mixin title {
+    color: #FFF; 
+    font-family: 'Playfair Display';
+    font-size: 64px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    line-height: 77px;
+}
+
+$subtitle-color: #FBD784;
+
+
 .wrapper__hero-section {
     max-width: 1920px;
     margin: 0 auto;
@@ -9,42 +31,36 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        padding-left: 80px;
+        padding-top: 190px;
+        gap: 24px;
 
         &-text {
             color: #FFF;
-            width: 77px;
-            height: 22px;
+            width: 22px;
+            height: 77px;
             font-family: 'Roboto';
             font-size: 18px;
             font-weight: 700;
-            transform: rotate(90deg);
-            position: absolute;
-            top: 386px;
-            left: 53px;
+            writing-mode: vertical-rl; 
         }
 
         &-instagram {
             width: 24px;
-            height: 24px;
-            position: absolute;
-            top: 458px;
-            left: 80px;
+            height: 24px; 
         }
 
         &-twitter {
             width: 24px;
-            height: 24px;
-            position: absolute;
-            top: 508px;
-            left: 80px;
+            height: 24px; 
         }
     }
 
     .title {
         display: flex;
         flex-direction: column;
-        padding-top: 180px;
-        padding-left: 500px;
+        padding-top: 182px;
+        padding-left: 395px;
 
         &__guide-flex {
             display: flex;
@@ -55,11 +71,11 @@
         &__horizontal-line {
             width: 72px;
             height: 2px;
-            background: #FBD784;
+            background: $subtitle-color;
         }
 
         &__guide {
-            color: #FBD784;
+            color: $subtitle-color;
             font-family: 'Roboto';
             font-size: 18px;
             font-weight: 800;
@@ -114,7 +130,7 @@
             display: flex;
             flex-direction: column;
             gap: 40px;
-            padding-left: 315px;
+            padding-left: 316px;
             padding-top: 190px;
         }
 
@@ -122,6 +138,7 @@
             width: 3px;
             height: 240px;
             padding-top: 190px;
+            padding-left: 1px;
         }
     }
 
@@ -145,24 +162,17 @@
             gap: 24px;
 
             &-number {
-                position: absolute;
-                transform: translateX(-150px);
-                color: #FFF;
-                font-family: 'Roboto';
-                font-size: 240px;
-                font-weight: 700;
-                line-height: 240px;
-                opacity: 0.1;
+                @include number; 
             }
 
             &-horizontal-line {
                 width: 72px;
                 height: 2px;
-                background: #FBD784;
+                background: $subtitle-color;
             }
 
             &-get-started {
-                color: #FBD784;
+                color: $subtitle-color;
                 font-family: "Roboto";
                 font-size: 18px;
                 font-weight: 800;
@@ -174,13 +184,8 @@
         h2 {
             margin: 0;
             padding-top: 20px;
-            color: #FFF;
             width: 555px;
-            font-family: 'Playfair Display';
-            font-size: 64px;
-            font-weight: 600;
-            letter-spacing: 0.2px;
-            line-height: 77px;
+            @include title;
         }
 
         &-caption {
@@ -202,7 +207,7 @@
             padding-top: 25px;
 
             &-text {
-                color: #FBD784;
+                color: $subtitle-color;
                 font-family: "Roboto";
                 font-size: 18px;
                 font-weight: 700;
@@ -211,7 +216,7 @@
             &-arrow {
                 width: 28px;
                 height: 20px;
-                color: #FBD784;
+                color: $subtitle-color;
             }
         }
     }
@@ -239,24 +244,17 @@
             padding-top: 140px;
 
             &-number {
-                position: absolute;
-                transform: translateX(-150px);
-                color: #FFF;
-                font-family: 'Roboto';
-                font-size: 240px;
-                font-weight: 700;
-                line-height: 240px;
-                opacity: 0.1;
+                @include number; 
             }
 
             &-horizontal-line {
                 width: 72px;
                 height: 2px;
-                background: #FBD784;
+                background: $subtitle-color;
             }
 
             &-hiking-essentials {
-                color: #FBD784;
+                color: $subtitle-color;
                 font-family: "Roboto";
                 font-size: 18px;
                 font-weight: 800;
@@ -267,12 +265,7 @@
 
         h2 {
             width: 555px;
-            color: #FFF;
-            font-family: 'Playfair Display';
-            font-size: 64px;
-            font-weight: 600;
-            padding-top: 23px;
-            line-height: 75px;
+            @include title;
             letter-spacing: -1px;
         }
 
@@ -295,7 +288,7 @@
             gap: 16px;
 
             &-text {
-                color: #FBD784;
+                color: $subtitle-color;
                 font-family: "Roboto";
                 font-size: 18px;
                 font-weight: 700;
@@ -304,7 +297,7 @@
             &-arrow {
                 width: 28px;
                 height: 20px;
-                color: #FBD784;
+                color: $subtitle-color;
             }
         }
 
@@ -331,24 +324,17 @@
             gap: 24px;
 
             &-number {
-                position: absolute;
-                transform: translateX(-150px);
-                color: #FFF;
-                font-family: 'Roboto';
-                font-size: 240px;
-                font-weight: 700;
-                line-height: 240px;
-                opacity: 0.1;
+                @include number;    
             }
 
             &-horizontal-line {
                 width: 72px;
                 height: 2px;
-                background: #FBD784;
+                background: $subtitle-color;
             }
 
             &-where-you-go {
-                color: #FBD784;
+                color: $subtitle-color;
                 font-family: "Roboto";
                 font-size: 18px;
                 font-weight: 800;
@@ -361,10 +347,7 @@
         h2 {
             padding-top: 22px;
             width: 555px;
-            color: #FFF;
-            font-family: 'Playfair Display';
-            font-size: 64px;
-            font-weight: 600;
+            @include title;
             letter-spacing: -0.6px;
         }
 
@@ -386,7 +369,7 @@
             padding-top: 28px;
 
             &-text {
-                color: #FBD784;
+                color: $subtitle-color;
                 font-family: "Roboto";
                 font-size: 18px;
                 font-weight: 700;
@@ -396,7 +379,7 @@
             &-arrow {
                 width: 28px;
                 height: 20px;
-                color: #FBD784;
+                color: $subtitle-color;
             }
         }
     }

@@ -355,38 +355,32 @@ template {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-left: 80px;
+  padding-top: 190px;
+  gap: 24px;
 }
 .wrapper__hero-section .social__media-text {
   color: #FFF;
-  width: 77px;
-  height: 22px;
+  width: 22px;
+  height: 77px;
   font-family: "Roboto";
   font-size: 18px;
   font-weight: 700;
-  transform: rotate(90deg);
-  position: absolute;
-  top: 386px;
-  left: 53px;
+  writing-mode: vertical-rl;
 }
 .wrapper__hero-section .social__media-instagram {
   width: 24px;
   height: 24px;
-  position: absolute;
-  top: 458px;
-  left: 80px;
 }
 .wrapper__hero-section .social__media-twitter {
   width: 24px;
   height: 24px;
-  position: absolute;
-  top: 508px;
-  left: 80px;
 }
 .wrapper__hero-section .title {
   display: flex;
   flex-direction: column;
-  padding-top: 180px;
-  padding-left: 500px;
+  padding-top: 182px;
+  padding-left: 395px;
 }
 .wrapper__hero-section .title__guide-flex {
   display: flex;
@@ -448,13 +442,14 @@ template {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  padding-left: 315px;
+  padding-left: 316px;
   padding-top: 190px;
 }
 .wrapper__hero-section .slider__icon {
   width: 3px;
   height: 240px;
   padding-top: 190px;
+  padding-left: 1px;
 }
 
 .wrapper__first-section {
@@ -499,8 +494,8 @@ template {
 .wrapper__first-section .first-section__left h2 {
   margin: 0;
   padding-top: 20px;
-  color: #FFF;
   width: 555px;
+  color: #FFF;
   font-family: "Playfair Display";
   font-size: 64px;
   font-weight: 600;
@@ -582,8 +577,8 @@ template {
   font-family: "Playfair Display";
   font-size: 64px;
   font-weight: 600;
-  padding-top: 23px;
-  line-height: 75px;
+  letter-spacing: 0.2px;
+  line-height: 77px;
   letter-spacing: -1px;
 }
 .wrapper__second-section .second-section__right-caption {
@@ -664,6 +659,8 @@ template {
   font-family: "Playfair Display";
   font-size: 64px;
   font-weight: 600;
+  letter-spacing: 0.2px;
+  line-height: 77px;
   letter-spacing: -0.6px;
 }
 .wrapper__third-section .third-section__left-caption {
@@ -807,7 +804,7 @@ h1, h2 {
   width: 1920px;
   height: 1900px;
   background-image: url(../img/gradient.png), url(../img/VG.png), url(../img/MG.png), linear-gradient(327deg, rgba(11, 29, 38, 0) 40%, #0B1D26 110%), url(../img/HG.png);
-  background-position: left bottom, left bottom 205px, left bottom, left top, left top;
+  background-position: left bottom, left bottom 205px, left bottom 12px, left top, left top;
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
 }
 
