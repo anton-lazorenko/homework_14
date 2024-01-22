@@ -1,4 +1,43 @@
 .header__wrapper {
-    width: 1920px;
-    margin: 0 auto;
+    max-width: 1920px; 
+    margin: 0 auto; 
+}
+
+.header__items {
+    display: flex; 
+    align-items: center;
+    color: #FFF;
+    padding: 50px 80px 0 80px;
+
+
+    &-logo {
+        font-family: 'Playfair Display';
+        font-size: 32px;
+        font-weight: 700;
+        letter-spacing: 4.5px;
+    }
+
+    &-navigation { 
+        font-size: 18px;
+        font-weight: 700;
+        font-family: 'Roboto';
+        padding-left: 588px;
+        letter-spacing: 0.5px;
+
+        &-list {
+            display: flex; 
+            align-items: center;
+            gap: 40px;
+        }
+    }
+
+    &-login {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding-left: 638px;
+        letter-spacing: 1.5px;
+    }
+
+
 }

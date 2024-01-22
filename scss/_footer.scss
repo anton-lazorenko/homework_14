@@ -1,0 +1,106 @@
+.footer__wrapper {
+    width: 1920px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding-bottom: 120px;
+
+    .footer__left {
+        display: flex;
+        flex-direction: column;
+        padding-left: 230px;
+        padding-top: 180px;
+        
+
+        &-logo {
+            color: #FFF;
+            font-family: 'Playfair Display';
+            font-size: 32px;
+            font-weight: 700;
+            letter-spacing: 4px;
+            text-transform: capitalize;
+        }
+
+        &-slogan {
+            padding-top: 30px;
+            width: 303px;
+            color: #FFF;
+            font-family: 'Roboto';
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 32px;
+            letter-spacing: 0.35px;
+        }
+
+        &-copyright {
+            padding-left: 5px;
+            padding-top: 120px;
+            color: #FFF;
+            font-family: 'Roboto';
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 32px;
+            opacity: 0.5;
+        }
+    }
+
+    .footer__right {
+        display: flex;
+
+        &-first-list {
+            padding-left: 542px;
+            color: #FFF;
+            font-family: 'Roboto';
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 32px;
+
+            &-title {
+                padding-top: 182px;
+                padding-bottom: 24px;
+                color: $subtitle-color;
+                font-family: 'Roboto';
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 32px;
+                letter-spacing: 0.2px;
+            }
+
+            &-other {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+            }
+        }
+
+        &-second-list {
+            padding-left: 215px;
+            color: #FFF;
+            font-family: 'Roboto';
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 32px;
+
+
+            &-title {
+                padding-top: 182px;
+                padding-bottom: 24px;
+                color: $subtitle-color;
+                font-family: 'Roboto';
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 32px;
+            }
+
+            &-other {
+                
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+
+            }
+        }
+    }
+
+
+}

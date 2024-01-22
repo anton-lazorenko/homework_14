@@ -1,13 +1,30 @@
-@import "../scss/_normalize";
+@import "./normalize";
 @import "./header";
 @import "./main";
 @import "./footer"; 
 
+ul {
+    list-style-type: none;
+}
 
+body { 
+    max-width: 1920px;
+    background-color: #0B1D26;
+}
 
-body {
+h1, h2 {
     margin: 0;
-    width: 1920px;
-    background-repeat: no-repeat;
-    background-image: url(/img/BG_Hero.png);  
+}
+
+.multiple-background { 
+    position: relative;
+    &__wrapper {
+        position: absolute;
+        z-index: -5;
+        width: 1920px;
+        height: 1900px;
+        background-image: url(../img/gradient.png), url(../img/VG.png), url(../img/MG.png), linear-gradient(327deg, rgba(11.48, 29.32, 38.25, 0) 40%, #0B1D26 110%), url(../img/HG.png);
+        background-position: left bottom, left bottom 205px, left bottom 12px, left top, left top;
+        background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+    }
 }
